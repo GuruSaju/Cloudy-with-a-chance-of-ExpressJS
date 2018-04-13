@@ -1,0 +1,14 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Simple weather app with express and node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srisarguru Sridhar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
