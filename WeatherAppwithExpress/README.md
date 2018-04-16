@@ -16,3 +16,7 @@ EJS is accessed by default in the views directory
 to add css files create a resources directory and add all static syling files  
 add app.use(express.static('resources')) in your code  
 The above code basically allows access to all the static files in public folder. 
+
+Express Middleware (functions that have access to the req and res bodies) in order to preform more advanced tasks.  
+body-parser middleware. body-parser allows us to make use of the key-value pairs stored on the req-body object  
+Command: npm install body-parser --save  
