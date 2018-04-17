@@ -20,3 +20,5 @@ The above code basically allows access to all the static files in public folder.
 Express Middleware (functions that have access to the req and res bodies) in order to preform more advanced tasks.  
 body-parser middleware. body-parser allows us to make use of the key-value pairs stored on the req-body object  
 Command: npm install body-parser --save  
+
+to get an api key to use the weather API go to https://home.openweathermap.org/users/sign_up to sign up for a new account (free) and generate an API key and use it  
