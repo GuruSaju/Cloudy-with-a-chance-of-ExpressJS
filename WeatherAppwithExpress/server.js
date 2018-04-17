@@ -19,7 +19,7 @@ app.get('/', function (req, res) { //specifically focusing on the roor '/' URL
 //post handling
 app.post('/temperature', function (req, res) {
   let city = req.body.city;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
   request(url, function (err, response, body) { //make a get request to the weather API
     if(err){
       res.render('index', {weather: null, error: 'Oops! The weather man is on vacation. Please try again'});
