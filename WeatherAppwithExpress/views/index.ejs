@@ -11,12 +11,17 @@
       <fieldset>
         <form action="/temperature" method="post">
           <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
-          <input type="submit" class="ghost-button" value="Get Weather">
+          <input name="weather" type="submit" class="ghost-button" value="Get Weather">
+          </br>
+          </br>
+          <input name="humidity" type="submit" class="ghost-button" value="Get Humidity">
         </form>
         <% if(weather !== null){ %>
           <p><%= weather %></p>
         <% } %>
-
+        <% if(humidity !== null){ %>
+          <p><%= humidity %></p>
+        <% } %>
         <% if(error !== null){ %>
           <p><%= error %></p>
         <% } %>
